@@ -1,0 +1,5 @@
+CREATE TABLE memosdb (
+                             Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                             Date TEXT NOT NULL,
+                             Content TEXT NOT NULL
+);

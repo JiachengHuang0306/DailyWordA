@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "lGjBeWH9Vo8=",
+  "success": true,
+  "projectFilePath": "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/DailyWordA.Library.csproj",
+  "expectedPackageFiles": [
+    "/Users/jiachenghuang/.nuget/packages/avalonia/11.1.4/avalonia.11.1.4.nupkg.sha512",
+    "/Users/jiachenghuang/.nuget/packages/avalonia.buildservices/0.0.29/avalonia.buildservices.0.0.29.nupkg.sha512",
+    "/Users/jiachenghuang/.nuget/packages/avalonia.remote.protocol/11.1.4/avalonia.remote.protocol.11.1.4.nupkg.sha512",
+    "/Users/jiachenghuang/.nuget/packages/avaloniainfinitescrolling.collection/1.0.1/avaloniainfinitescrolling.collection.1.0.1.nupkg.sha512",
+    "/Users/jiachenghuang/.nuget/packages/communitytoolkit.mvvm/8.3.2/communitytoolkit.mvvm.8.3.2.nupkg.sha512",
+    "/Users/jiachenghuang/.nuget/packages/microcom.runtime/0.11.0/microcom.runtime.0.11.0.nupkg.sha512",
+    "/Users/jiachenghuang/.nuget/packages/refractored.mvvmhelpers/1.6.2/refractored.mvvmhelpers.1.6.2.nupkg.sha512",
+    "/Users/jiachenghuang/.nuget/packages/sqlite-net-pcl/1.9.172/sqlite-net-pcl.1.9.172.nupkg.sha512",
+    "/Users/jiachenghuang/.nuget/packages/sqlitepclraw.bundle_green/2.1.2/sqlitepclraw.bundle_green.2.1.2.nupkg.sha512",
+    "/Users/jiachenghuang/.nuget/packages/sqlitepclraw.core/2.1.2/sqlitepclraw.core.2.1.2.nupkg.sha512",
+    "/Users/jiachenghuang/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.2/sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512",
+    "/Users/jiachenghuang/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.2/sqlitepclraw.provider.e_sqlite3.2.1.2.nupkg.sha512",
+    "/Users/jiachenghuang/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
+    "/Users/jiachenghuang/.nuget/packages/system.valuetuple/4.5.0/system.valuetuple.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

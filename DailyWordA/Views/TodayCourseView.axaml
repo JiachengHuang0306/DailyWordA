@@ -1,0 +1,38 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" 
+             d:DesignWidth="800" 
+             d:DesignHeight="450"
+             x:Class="DailyWordA.Views.TodayCourseView"
+             DataContext="{Binding TodayCourseViewModel, Source={StaticResource ServiceLocator}}">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- 标题 -->
+        <TextBlock Text="今日课程"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   Margin="10"
+                   Grid.Row="0" />
+
+        <!-- 课程列表 -->
+        <DataGrid ItemsSource="{Binding Courses}"
+                  AutoGenerateColumns="False"
+                  Grid.Row="1"
+                  Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="时间" Binding="{Binding Time}" />
+                <DataGridTextColumn Header="课程名称" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="地点" Binding="{Binding Location}" />
+                <DataGridTextColumn Header="教师" Binding="{Binding Teacher}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>
+

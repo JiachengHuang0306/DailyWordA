@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="11.1.4" />
+        <PackageReference Include="AvaloniaInfiniteScrolling.Collection" Version="1.0.1" />
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.2" />
+        <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
+        <PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Remove="wordsdb.sqlite3"/>
+        <EmbeddedResource Include="wordsdb.sqlite3">
+            <LogicalName>wordsdb.sqlite3</LogicalName>
+        </EmbeddedResource>
+        <None Remove="todayImage.bin" />
+        <EmbeddedResource Include="todayImage.bin">
+            <LogicalName>todayImage.bin</LogicalName>
+        </EmbeddedResource>
+        <None Remove="memosdb.sqlite3" />
+        <EmbeddedResource Include="memosdb.sqlite3" />
+    </ItemGroup>
+    
+</Project>

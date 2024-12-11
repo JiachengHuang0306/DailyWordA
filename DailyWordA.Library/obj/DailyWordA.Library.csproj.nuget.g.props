@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/jiachenghuang/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/jiachenghuang/.nuget/packages/</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.10.1</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="/Users/jiachenghuang/.nuget/packages/" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)avalonia/11.1.4/buildTransitive/Avalonia.props" Condition="Exists('$(NuGetPackageRoot)avalonia/11.1.4/buildTransitive/Avalonia.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgAvalonia_BuildServices Condition=" '$(PkgAvalonia_BuildServices)' == '' ">/Users/jiachenghuang/.nuget/packages/avalonia.buildservices/0.0.29</PkgAvalonia_BuildServices>
+    <PkgAvalonia Condition=" '$(PkgAvalonia)' == '' ">/Users/jiachenghuang/.nuget/packages/avalonia/11.1.4</PkgAvalonia>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,85 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:i="using:Avalonia.Xaml.Interactivity"
+             xmlns:ia="using:Avalonia.Xaml.Interactions.Core"
+             xmlns:lv="using:DailyWordA.Converters"
+             mc:Ignorable="d"
+             d:DesignWidth="800"
+             d:DesignHeight="450"
+             x:Class="DailyWordA.Views.MemoView"
+             DataContext="{Binding MemoViewModel, Source={StaticResource ServiceLocator}}">
+
+    <Grid Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.13*" /> <!-- 左边日历 -->
+            <ColumnDefinition Width="3*" /> <!-- 右边备忘录内容 -->
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" /> <!-- 主内容 -->
+            <RowDefinition Height="Auto" /> <!-- 底部输入部分 -->
+        </Grid.RowDefinitions>
+
+        <!-- 左边日历部分 -->
+        <StackPanel Grid.Column="0" VerticalAlignment="Top" Margin="10" Background="#1E1E1E">
+            <Calendar SelectedDate="{Binding SelectedDate, Mode=TwoWay}"
+                      BorderBrush="#3C3C3C"
+                      BorderThickness="1"
+                      Margin="10" />
+        </StackPanel>
+
+        <!-- 右边备忘录部分 -->
+        <Grid Grid.Column="1" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" /> <!-- 列表部分 -->
+                <RowDefinition Height="Auto" /> <!-- 输入部分 -->
+            </Grid.RowDefinitions>
+
+            <!-- 备忘录列表 SelectedItem="{Binding SelectedMemo, Mode=TwoWay}"-->
+            <ListBox ItemsSource="{Binding MemoList}"
+                     Background="#2C2C2C"
+                     BorderBrush="#3C3C3C"
+                     BorderThickness="1"
+                     CornerRadius="5"
+                     Margin="0,0,0,10"
+                     Grid.Row="0">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid ColumnDefinitions="3* Auto Auto" Margin="5">
+                            <TextBlock Text="{Binding Content}" 
+                                       FontSize="16" 
+                                       Foreground="White"
+                                       Grid.Column="0" 
+                                       VerticalAlignment="Center" 
+                                       TextTrimming="CharacterEllipsis" />
+                            <Button Content="删除" Command="{Binding DataContext.DeleteMemoCommand, RelativeSource={RelativeSource AncestorType=ListBox}}"
+                                    CommandParameter="{Binding}" 
+                                    Background="#FF4C4C" 
+                                    Foreground="White" 
+                                    Width="80"
+                                    Margin="10,0,5,0" Grid.Column="1" 
+                                    HorizontalAlignment="Right" />
+                            <!-- <Button Content="编辑" -->
+                            <!--         Command="{Binding DataContext.EditMemoCommand, RelativeSource={RelativeSource AncestorType=ListBox}}" -->
+                            <!--         CommandParameter="{Binding}" -->
+                            <!--         Background="#FFC107" -->
+                            <!--         Foreground="White" -->
+                            <!--         Width="80" -->
+                            <!--         Margin="5,0,0,0" -->
+                            <!--         Grid.Column="2" -->
+                            <!--         HorizontalAlignment="Right" /> -->
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <!-- 输入部分 -->
+            <StackPanel Orientation="Horizontal" Spacing="10" Grid.Row="1">
+                <TextBox Width="582" Text="{Binding NewMemoContent, Mode=TwoWay}" Watermark="请输入备忘事项..." Background="#2C2C2C" Foreground="White" BorderBrush="#3C3C3C" CornerRadius="5" Padding="5" />
+                <Button Content="添加" Command="{Binding AddMemoCommand}" Background="#4CAF50" Foreground="White" Width="100" />
+                <Button Content="刷新" Command="{Binding LoadMemosCommand}" Background="#2196F3" Foreground="White" Width="100" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

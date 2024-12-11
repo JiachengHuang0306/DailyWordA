@@ -1,0 +1,143 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:i="using:Avalonia.Xaml.Interactivity"
+             xmlns:ia="using:Avalonia.Xaml.Interactions.Core"
+             xmlns:lc="using:DailyWordA.Converters"
+             xmlns:ais="using:AvaloniaInfiniteScrolling"
+             xmlns:u="https://irihi.tech/ursa"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="DailyWordA.Views.TodayWordView"
+             DataContext="{Binding TodayWordViewModel, Source={StaticResource ServiceLocator}}"
+             >
+    
+    <UserControl.Resources>
+        <lc:ByteArrayToBitmapConverter x:Key="ByteArrayToBitmapConverter"></lc:ByteArrayToBitmapConverter>
+        <lc:NegativeConverter x:Key="NegativeConverter"></lc:NegativeConverter>
+    </UserControl.Resources>
+    <!-- <i:Interaction.Behaviors> -->
+    <!--     <ia:EventTriggerBehavior EventName="Initialized"> -->
+    <!--         <ia:InvokeCommandAction Command="{Binding OnInitializedCommand}"></ia:InvokeCommandAction> -->
+    <!--     </ia:EventTriggerBehavior> -->
+    <!-- </i:Interaction.Behaviors> -->
+    
+    
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+    
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <Image
+            Source="{Binding TodayImage.ImageBytes, Converter={StaticResource ByteArrayToBitmapConverter}}"
+            Stretch="UniformToFill" />
+    
+        <StackPanel Background="#66000000"
+            VerticalAlignment="Bottom"
+            Spacing="12">
+    <StackPanel Margin="8"
+                IsVisible="{Binding IsLoading}">
+        <ProgressBar Foreground="White"
+                     IsIndeterminate="{Binding IsLoading}"
+                     Width="50"
+                     Height="50"
+                     Margin="0,0,0,8"
+                     Theme="{DynamicResource ProgressRing}"
+                     ShowProgressText="False" />
+        <Label Foreground="White"
+               Content="正在载入"
+               HorizontalAlignment="Center" />
+    </StackPanel>
+
+    <StackPanel Margin="8"
+                IsVisible="{Binding IsLoading, 
+                Converter={StaticResource NegativeConverter}}">
+        <Label FontSize="28"
+               Foreground="White"
+               Margin="0,0,0,8"
+               Content="{Binding TodayWord.Word}" />
+        <Label FontSize="20"
+               Foreground="White"
+               Margin="5,0,8,8"
+               Content="{Binding TodayWord.Accent}"
+               VerticalAlignment="Center" />
+        <Label FontSize="18"
+               Foreground="White"
+               Margin="5,0,8,8"
+               Content="{Binding TodayWord.CnMeaning}"
+               VerticalAlignment="Center" />
+        <StackPanel x:Name="DetailStackLayout">
+            <Label FontSize="18"
+                   Foreground="White"
+                   Margin="0,0,8,8"
+                   Content="{Binding TodayWord.Sentence}"
+                   VerticalAlignment="Center" />
+            <Label FontSize="18"
+                   Foreground="White"
+                   Margin="0,0,8,8"
+                   Content="{Binding TodayWord.SentenceTrans}"
+                   VerticalAlignment="Center" />
+        </StackPanel>
+    </StackPanel>
+
+    <!-- 改进的按钮布局 -->
+    <Grid ColumnDefinitions="*,*"
+          HorizontalAlignment="Center"
+          Margin="0,8">
+        <Button Grid.Column="0"
+                Content="单词详情"
+                Command="{Binding ShowDetailCommand}"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Width="120"
+                Height="40"
+                Background="Black"
+                Foreground="White"
+                FontSize="16"
+                CornerRadius="20"
+                Margin="4">
+            <Button.Styles>
+                <Style Selector="Button:hover">
+                    <Setter Property="Background" Value="White" />
+                    <Setter Property="Foreground" Value="Black" />
+                </Style>
+            </Button.Styles>
+        </Button>
+
+        <Button Grid.Column="1"
+                Content="换一换"
+                Command="{Binding UpdateWordCommand}"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Width="120"
+                Height="40"
+                Background="White"
+                Foreground="Black"
+                FontSize="16"
+                CornerRadius="20"
+                Margin="4">
+            <Button.Styles>
+                <Style Selector="Button:hover">
+                    <Setter Property="Background" Value="Black" />
+                    <Setter Property="Foreground" Value="White" />
+                </Style>
+            </Button.Styles>
+        </Button>
+    </Grid>
+
+    <StackPanel Background="#66000000">
+        <Label Foreground="White"
+               Margin="8"
+               FontSize="12"
+               Content="{Binding TodayImage.Copyright}">
+        </Label>
+    </StackPanel>
+</StackPanel>
+
+    </Grid>
+    
+</UserControl>
