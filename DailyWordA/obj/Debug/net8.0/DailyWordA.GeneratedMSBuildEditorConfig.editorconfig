@@ -16,54 +16,57 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DailyWordA
-build_property.ProjectDir = /Users/jiachenghuang/Desktop/DWANEU/DailyWordA/
+build_property.ProjectDir = /Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/App.axaml]
+[/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/Views/InitializationView.axaml]
+[/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/InitializationView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/Views/MainView.axaml]
+[/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/MainView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/Views/MainWindow.axaml]
+[/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/Views/MemoView.axaml]
+[/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/MemoView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/Views/MottoDetailView.axaml]
+[/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/MottoDetailView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/Views/QueryCourseView.axaml]
+[/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/QueryCourseView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/Views/TodayCourseView.axaml]
+[/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/TodayCourseView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/Views/TodayMottoView.axaml]
+[/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/TodayMottoView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/Views/TodayWordView.axaml]
+[/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/TodayWordView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/Views/TranslateView.axaml]
+[/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/TranslateView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/Views/WordDetailView.axaml]
+[/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/WeatherView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/Views/WordFavoriteView.axaml]
+[/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/WordDetailView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/Views/WordQueryResultView.axaml]
+[/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/WordFavoriteView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/Views/WordQueryView.axaml]
+[/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/WordQueryResultView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/Views/WordQuizView.axaml]
+[/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/WordQueryView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/WordQuizView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

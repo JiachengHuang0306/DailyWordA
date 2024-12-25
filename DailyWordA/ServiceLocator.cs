@@ -80,6 +80,9 @@ public class ServiceLocator {
     public MemoViewModel MemoViewModel => 
         _serviceProvider.GetRequiredService<MemoViewModel>();
     
+    public WeatherViewModel WeatherViewModel => 
+        _serviceProvider.GetRequiredService<WeatherViewModel>();
+    
     public ServiceLocator() {
         var serviceCollection = new ServiceCollection();
 
@@ -113,6 +116,9 @@ public class ServiceLocator {
         serviceCollection.AddSingleton<TodayCourseViewModel>();
         serviceCollection.AddSingleton<QueryCourseViewModel>();
         serviceCollection.AddSingleton<MemoViewModel>();
+        
+        serviceCollection.AddSingleton<WeatherViewModel>();
+        serviceCollection.AddSingleton<IWeatherService, WeatherService>();
 
         _serviceProvider = serviceCollection.BuildServiceProvider();
     }

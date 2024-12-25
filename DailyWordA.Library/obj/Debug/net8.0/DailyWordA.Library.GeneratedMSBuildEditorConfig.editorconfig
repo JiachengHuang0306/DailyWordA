@@ -16,6 +16,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DailyWordA.Library
-build_property.ProjectDir = /Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/
+build_property.ProjectDir = /Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

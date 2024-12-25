@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.UnitTest/DailyWordA.UnitTest.csproj": {}
+    "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.UnitTest/DailyWordA.UnitTest.csproj": {}
   },
   "projects": {
-    "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/DailyWordA.Library.csproj": {
+    "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/DailyWordA.Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/DailyWordA.Library.csproj",
+        "projectUniqueName": "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/DailyWordA.Library.csproj",
         "projectName": "DailyWordA.Library",
-        "projectPath": "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/DailyWordA.Library.csproj",
-        "packagesPath": "/Users/jiachenghuang/.nuget/packages/",
-        "outputPath": "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/obj/",
+        "projectPath": "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/DailyWordA.Library.csproj",
+        "packagesPath": "/Users/yichengxu/.nuget/packages/",
+        "outputPath": "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/jiachenghuang/.nuget/NuGet/NuGet.Config"
+          "/Users/yichengxu/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -84,17 +84,17 @@
         }
       }
     },
-    "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.UnitTest/DailyWordA.UnitTest.csproj": {
+    "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.UnitTest/DailyWordA.UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.UnitTest/DailyWordA.UnitTest.csproj",
+        "projectUniqueName": "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.UnitTest/DailyWordA.UnitTest.csproj",
         "projectName": "DailyWordA.UnitTest",
-        "projectPath": "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.UnitTest/DailyWordA.UnitTest.csproj",
-        "packagesPath": "/Users/jiachenghuang/.nuget/packages/",
-        "outputPath": "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.UnitTest/obj/",
+        "projectPath": "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.UnitTest/DailyWordA.UnitTest.csproj",
+        "packagesPath": "/Users/yichengxu/.nuget/packages/",
+        "outputPath": "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.UnitTest/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/jiachenghuang/.nuget/NuGet/NuGet.Config"
+          "/Users/yichengxu/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -106,8 +106,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/DailyWordA.Library.csproj": {
-                "projectPath": "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/DailyWordA.Library.csproj"
+              "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/DailyWordA.Library.csproj": {
+                "projectPath": "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/DailyWordA.Library.csproj"
               }
             }
           }

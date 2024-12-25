@@ -23,3 +23,17 @@ Z:/Desktop/DWA/DailyWordA.Library/obj/Debug/net8.0/ref/DailyWordA.Library.dll
 /Users/jiachenghuang/Desktop/DWA/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.pdb
 /Users/jiachenghuang/Desktop/DWA/DailyWordA.Library/obj/Debug/net8.0/ref/DailyWordA.Library.dll
 /Users/jiachenghuang/Desktop/DWA/DailyWordA.Library/obj/Debug/net8.0/Avalonia/Resources.Inputs.cache
+/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/bin/Debug/net8.0/DailyWordA.Library.deps.json
+/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/bin/Debug/net8.0/DailyWordA.Library.dll
+/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/bin/Debug/net8.0/DailyWordA.Library.pdb
+/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.csproj.AssemblyReference.cache
+/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/obj/Debug/net8.0/Avalonia/Resources.Inputs.cache
+/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.AssemblyInfoInputs.cache
+/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.AssemblyInfo.cs
+/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.csproj.CoreCompileInputs.cache
+/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.sourcelink.json
+/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.dll
+/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/obj/Debug/net8.0/refint/DailyWordA.Library.dll
+/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.pdb
+/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/obj/Debug/net8.0/ref/DailyWordA.Library.dll

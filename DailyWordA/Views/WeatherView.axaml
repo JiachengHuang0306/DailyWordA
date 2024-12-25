@@ -1,0 +1,225 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+             x:Class="DailyWordA.Views.WeatherView"
+             DataContext="{Binding WeatherViewModel, Source={StaticResource ServiceLocator}}">
+    <!-- 使用 Grid 容器 -->
+    <Grid>
+        <!-- 背景图片 -->
+        <Image Source="avares://DailyWordA/Assets/weather_background6.png" Stretch="UniformToFill" />
+
+        <!-- 滚动区域 -->
+        <ScrollViewer>
+            <StackPanel Margin="20" Spacing="15">
+                <!-- 搜索栏 -->
+                <Grid ColumnDefinitions="1*,Auto" Margin="0,0,0,20">
+                    <!-- 占位列 -->
+                    <TextBlock Grid.Column="0" />
+
+                    <!-- 输入框和按钮列 -->
+                    <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="10">
+                        <!-- 输入框 -->
+                        <TextBox Width="200" Height="30"
+                                 Text="{Binding SearchCityName, Mode=TwoWay}"
+                                 Watermark="请输入城市名称" />
+                        <!-- 搜索按钮 -->
+                        <Button Content="搜索" Width="80" Height="30"
+                                Background="#CCCCCC" Foreground="#222222"
+                                Command="{Binding SearchAndLoadWeatherCommand}"/>
+                        <!-- 自动定位按钮 -->
+                        <Button Content="自动定位"
+                                Width="100" Height="30"
+                                Background="#CCCCCC" Foreground="#222222"
+                                Command="{Binding AutoLocateAndLoadWeatherCommand}" />
+                    </StackPanel>
+                </Grid>
+                
+                
+                
+                <!-- 温度和天气描述 -->
+                <StackPanel HorizontalAlignment="Center" Spacing="5">
+                    <!-- 城市标题 -->
+                    <TextBlock Text="{Binding CityName}"
+                               FontSize="36"
+                               FontWeight="Bold"
+                               HorizontalAlignment="Center"
+                               Foreground="White"
+                               />
+                    <TextBlock Text="{Binding Temperature}"
+                               FontSize="48"
+                               FontWeight="Bold"
+                               HorizontalAlignment="Center"
+                               Foreground="White" />
+                    <TextBlock Text="{Binding WeatherDescription}"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               HorizontalAlignment="Center"
+                               Foreground="WhiteSmoke" />
+                    <Image Source="{Binding CurrentWeatherIcon}" Width="50" Height="50" />
+                </StackPanel>
+
+                <!-- 主信息区域 -->
+                <Grid RowDefinitions="Auto,*" ColumnDefinitions="1*,2*" Margin="0,20,0,0">
+                    <!-- 多日天气 -->
+                    <Border Grid.Column="0" Background="#AA333333" CornerRadius="10" Padding="10" Margin="0,5" MinHeight="300">
+                        <StackPanel>
+                            <TextBlock Text="未来七天天气" FontSize="14" Foreground="#CCCCCC" Margin="0,0,0,10" VerticalAlignment="Top"/>
+                            <!-- 每天的天气信息 -->
+                            <ItemsControl ItemsSource="{Binding DailyWeather}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <StackPanel Orientation="Horizontal" Spacing="10">
+                                                <!-- 日期 -->
+                                                <TextBlock Text="{Binding FxDate}" FontSize="18" Foreground="#CCCCCC" Width="120" />
+                                                <!-- 天气描述 -->
+                                                <TextBlock Text="{Binding TextDay}" FontSize="20" FontWeight="Bold" Foreground="White" Width="80" />
+                                                <Image Source="{Binding IconBitmap}" Width="30" Height="30" />
+                                                <!-- 温度范围 -->
+                                                <TextBlock Text="{Binding TempMin}" FontSize="18" FontWeight="Bold" Foreground="#CCCCCC" />
+                                                <TextBlock Text="~" FontSize="18" Foreground="#CCCCCC" />
+                                                <TextBlock Text="{Binding TempMax}" FontSize="18" FontWeight="Bold" Foreground="#CCCCCC" />
+                                            </StackPanel>
+
+                                            <!-- 分割线 -->
+                                            <Separator Background="#555555" Height="1" Margin="0,5" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
+                    </Border>
+
+                    <!-- 其他天气信息 -->
+                    <!-- <WrapPanel Grid.Column="1" Margin="10,0,0,0"> -->
+                    <!-- 其他天气信息 -->
+                    <StackPanel Grid.Column="1" Spacing="10" Margin="0,5,0,0">
+                        <!-- 逐小时天气 -->
+                        <Border Background="#AA333333" CornerRadius="10" Padding="15" Margin="10,0,0,0">
+                            <StackPanel>
+                                <TextBlock Text="逐小时天气" FontSize="14" Foreground="#CCCCCC" Margin="0,0,0,10" />
+                                <!-- 横向布局，每小时天气分一列 -->
+                                <ScrollViewer HorizontalScrollBarVisibility="Auto">
+                                    <StackPanel Orientation="Horizontal" Spacing="10">
+                                        <ItemsControl ItemsSource="{Binding HourlyWeather}">
+                                            <ItemsControl.ItemsPanel>
+                                                <ItemsPanelTemplate>
+                                                    <StackPanel Orientation="Horizontal" Spacing="10" />
+                                                </ItemsPanelTemplate>
+                                            </ItemsControl.ItemsPanel>
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel>
+                                                        <TextBlock Text="{Binding ParsedFxTime, StringFormat='{}{0:HH\\:mm}'}" 
+                                                                   FontSize="16" FontWeight="Bold" 
+                                                                   Foreground="#FFFFFF" 
+                                                                   HorizontalAlignment="Center" />
+                                                        <TextBlock Text="{Binding Text}" 
+                                                                   FontSize="14" 
+                                                                   Foreground="#CCCCCC" 
+                                                                   HorizontalAlignment="Center" />
+                                                        <Image Source="{Binding IconBitmap}" Width="30" Height="30" />
+                                                        <TextBlock Text="{Binding Temp, StringFormat='{}{0}°C'}" 
+                                                                   FontSize="16" 
+                                                                   FontWeight="Bold" 
+                                                                   Foreground="#FFFFFF" 
+                                                                   HorizontalAlignment="Center" />
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                    </StackPanel>
+                                </ScrollViewer>
+                            </StackPanel>
+                        </Border>
+                        
+                        <!-- WrapPanel 其他天气信息 -->
+                        <WrapPanel Margin="10,0,0,0" HorizontalAlignment="Left" ItemWidth="239.5" ItemHeight="105">
+                            <!-- 风 -->
+                            <Border Background="#AA333333" CornerRadius="10" Padding="10" Margin="5">
+                                <StackPanel>
+                                    <TextBlock Text="风" FontSize="14" Foreground="#CCCCCC" />
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                        <TextBlock Text="{Binding WindInfo}" FontSize="20" FontWeight="Bold" Foreground="White" />
+                                    </StackPanel>
+                                </StackPanel>
+                            </Border>
+
+                            <!-- 湿度 -->
+                            <Border Background="#AA333333" CornerRadius="10" Padding="10" Margin="5">
+                                <StackPanel>
+                                    <TextBlock Text="湿度" FontSize="14" Foreground="#CCCCCC" />
+                                    <TextBlock Text="{Binding Humidity}" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" />
+                                </StackPanel>
+                            </Border>
+
+                            <!-- 降水量 -->
+                            <Border Background="#AA333333" CornerRadius="10" Padding="10" Margin="5">
+                                <StackPanel>
+                                    <TextBlock Text="降水量" FontSize="14" Foreground="#CCCCCC" />
+                                    <TextBlock Text="{Binding Precipitation}" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" />
+                                </StackPanel>
+                            </Border>
+
+                            <!-- 气压 -->
+                            <Border Background="#AA333333" CornerRadius="10" Padding="10" Margin="5">
+                                <StackPanel>
+                                    <TextBlock Text="气压" FontSize="14" Foreground="#CCCCCC" />
+                                    <TextBlock Text="{Binding Pressure}" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" />
+                                </StackPanel>
+                            </Border>
+
+                            <!-- 能见度 -->
+                            <Border Background="#AA333333" CornerRadius="10" Padding="10" Margin="5">
+                                <StackPanel>
+                                    <TextBlock Text="能见度" FontSize="14" Foreground="#CCCCCC" />
+                                    <TextBlock Text="{Binding Visibility}" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" />
+                                </StackPanel>
+                            </Border>
+
+                            <!-- 云量 -->
+                            <Border Background="#AA333333" CornerRadius="10" Padding="10" Margin="5">
+                                <StackPanel>
+                                    <TextBlock Text="云量" FontSize="14" Foreground="#CCCCCC" />
+                                    <TextBlock Text="{Binding CloudCover}" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" />
+                                </StackPanel>
+                            </Border>
+
+                            <!-- 露点 -->
+                            <!-- <Border Background="#AA333333" CornerRadius="10" Padding="10" Margin="5"> -->
+                            <!--     <StackPanel> -->
+                            <!--         <TextBlock Text="露点温度" FontSize="14" Foreground="#CCCCCC" /> -->
+                            <!--         <TextBlock Text="{Binding DewPoint}" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" /> -->
+                            <!--     </StackPanel> -->
+                            <!-- </Border> -->
+                        </WrapPanel>
+                    </StackPanel>
+                </Grid>
+                <!-- 天气指数/生活建议 -->
+                <Border Background="#AA333333" CornerRadius="10" Padding="10" Margin="0,20,0,0">
+                    <StackPanel>
+                        <TextBlock Text="生活建议" FontSize="20" FontWeight="Bold" Foreground="White" Margin="0,0,0,10" />
+
+                        <!-- ~1~ 如果没有生活建议，显示默认消息 @1@ -->
+                        <!-- <TextBlock Text="仅提供中国地区生活建议" -->
+                        <!--            FontSize="16" -->
+                        <!--            Foreground="#CCCCCC" -->
+                        <!--            TextWrapping="Wrap" -->
+                        <!--            IsVisible="{Binding IsWeatherIndicesEmpty}" /> -->
+                        
+                        <!-- 动态绑定的生活建议 -->
+                        <ItemsControl ItemsSource="{Binding WeatherIndices}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding}" FontSize="16" Foreground="#CCCCCC" TextWrapping="Wrap" Margin="0,5" />
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

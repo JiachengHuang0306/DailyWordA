@@ -21,6 +21,8 @@ public class MenuNavigationService : IMenuNavigationService {
                 WordQuizViewModel,
             MenuNavigationConstant.MemoView => ServiceLocator.Current.
                 MemoViewModel,
+            MenuNavigationConstant.WeatherView => ServiceLocator.Current.
+                WeatherViewModel,
             _ => throw new Exception("未知的视图。")
         };
 

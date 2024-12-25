@@ -24,4 +24,7 @@ public static class MenuNavigationConstant {
     public const string QueryCourseView = nameof(QueryCourseView);
 
     public const string MemoView = nameof(MemoView);
+    
+    public const string WeatherView= nameof(WeatherView);//天气预报
+
 }
