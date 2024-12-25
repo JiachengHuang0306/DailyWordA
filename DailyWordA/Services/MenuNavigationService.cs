@@ -23,6 +23,8 @@ public class MenuNavigationService : IMenuNavigationService {
                 MemoViewModel,
             MenuNavigationConstant.WeatherView => ServiceLocator.Current.
                 WeatherViewModel,
+            MenuNavigationConstant.MusicPlayerView => ServiceLocator.Current
+                .MusicPlayerViewModel, // 添加音乐播放器视图关联
             _ => throw new Exception("未知的视图。")
         };
 

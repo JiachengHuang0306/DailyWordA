@@ -1,0 +1,65 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
+             x:Class="DailyWordA.Views.MusicPlayerView">
+
+    <!-- 整体布局 -->
+    <Grid>
+        <!-- 背景图片 -->
+        <Grid.Background>
+            <!-- weather_background6.png -->
+            <ImageBrush Source="avares://DailyWordA/Assets/1.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+
+        <!-- 定义行布局 -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*" /> <!-- 上部分：音乐列表 70% -->
+            <RowDefinition Height="Auto" /> <!-- 中间：进度条 -->
+            <RowDefinition Height="1*" /> <!-- 下部分：播放控制 30% -->
+        </Grid.RowDefinitions>
+
+        <!-- 上部分：音乐列表 -->
+        <Border Grid.Row="0" BorderThickness="0" Background="#00000080"> <!-- 半透明背景 -->
+            <StackPanel Margin="10">
+                <TextBlock Text="Music Playlist" FontSize="18" FontWeight="Bold" Foreground="White" Margin="0,0,0,10" />
+                <ItemsControl>
+                    <!-- 示例歌曲列表 -->
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <TextBlock Text="1. Song Title - Artist Name" FontSize="14" Foreground="White" VerticalAlignment="Center" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <TextBlock Text="2. Another Song - Another Artist" FontSize="14" Foreground="White" VerticalAlignment="Center" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <TextBlock Text="3. More Music - Example Artist" FontSize="14" Foreground="White" VerticalAlignment="Center" />
+                    </StackPanel>
+                </ItemsControl>
+            </StackPanel>
+        </Border>
+
+        <!-- 中间：音乐播放进度条 -->
+        <Border Grid.Row="1" BorderThickness="0" Background="#00000080" Height="50">
+            <Grid>
+                <Slider Minimum="0" Maximum="100" Value="30" VerticalAlignment="Center" Margin="10" />
+            </Grid>
+        </Border>
+
+        <!-- 下部分：播放控制 -->
+        <Border Grid.Row="2" BorderThickness="0" Background="#00000080">
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="10">
+                <!-- 当前播放音乐名称 -->
+                <TextBlock Text="Now Playing: Song Title - Artist Name" FontSize="16" Foreground="White" HorizontalAlignment="Center" />
+                <!-- 控制按钮 -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="20">
+                    <Button Content="Previous" Width="80" Height="40" />
+                    <Button Content="Play/Pause" Width="80" Height="40" />
+                    <Button Content="Next" Width="80" Height="40" />
+                    <Button Content="Shuffle" Width="80" Height="40" />
+                    <Button Content="Repeat" Width="80" Height="40" />
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

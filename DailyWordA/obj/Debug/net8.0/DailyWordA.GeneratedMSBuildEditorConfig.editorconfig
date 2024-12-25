@@ -38,6 +38,12 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/MottoDetailView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/MusicPlayerView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/PlaylistWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/Views/QueryCourseView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 

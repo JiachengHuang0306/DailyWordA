@@ -82,7 +82,10 @@ public class ServiceLocator {
     
     public WeatherViewModel WeatherViewModel => 
         _serviceProvider.GetRequiredService<WeatherViewModel>();
-    
+
+    public MusicPlayerViewModel MusicPlayerViewModel => 
+        _serviceProvider.GetRequiredService<MusicPlayerViewModel>();
+
     public ServiceLocator() {
         var serviceCollection = new ServiceCollection();
 
@@ -119,6 +122,9 @@ public class ServiceLocator {
         
         serviceCollection.AddSingleton<WeatherViewModel>();
         serviceCollection.AddSingleton<IWeatherService, WeatherService>();
+        
+        serviceCollection.AddSingleton<MusicPlayerViewModel>();
+        serviceCollection.AddSingleton<IMusicPlayer, MusicPlayer>();
 
         _serviceProvider = serviceCollection.BuildServiceProvider();
     }
