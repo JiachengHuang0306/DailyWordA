@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/DailyWordA.csproj": {}
+    "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/DailyWordA.csproj": {}
   },
   "projects": {
-    "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/DailyWordA.Library.csproj": {
+    "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/DailyWordA.Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/DailyWordA.Library.csproj",
+        "projectUniqueName": "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/DailyWordA.Library.csproj",
         "projectName": "DailyWordA.Library",
-        "projectPath": "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/DailyWordA.Library.csproj",
-        "packagesPath": "/Users/yichengxu/.nuget/packages/",
-        "outputPath": "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/obj/",
+        "projectPath": "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/DailyWordA.Library.csproj",
+        "packagesPath": "/Users/jiachenghuang/.nuget/packages/",
+        "outputPath": "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/yichengxu/.nuget/NuGet/NuGet.Config"
+          "/Users/jiachenghuang/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -55,9 +55,17 @@
               "target": "Package",
               "version": "[8.3.2, )"
             },
+            "NAudio": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
             "Refractored.MvvmHelpers": {
               "target": "Package",
               "version": "[1.6.2, )"
+            },
+            "TagLibSharp": {
+              "target": "Package",
+              "version": "[2.3.0, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -84,17 +92,17 @@
         }
       }
     },
-    "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/DailyWordA.csproj": {
+    "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/DailyWordA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/DailyWordA.csproj",
+        "projectUniqueName": "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/DailyWordA.csproj",
         "projectName": "DailyWordA",
-        "projectPath": "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/DailyWordA.csproj",
-        "packagesPath": "/Users/yichengxu/.nuget/packages/",
-        "outputPath": "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA/obj/",
+        "projectPath": "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/DailyWordA.csproj",
+        "packagesPath": "/Users/jiachenghuang/.nuget/packages/",
+        "outputPath": "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/yichengxu/.nuget/NuGet/NuGet.Config"
+          "/Users/jiachenghuang/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -106,8 +114,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/DailyWordA.Library.csproj": {
-                "projectPath": "/Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/DailyWordA.Library.csproj"
+              "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/DailyWordA.Library.csproj": {
+                "projectPath": "/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/DailyWordA.Library.csproj"
               }
             }
           }

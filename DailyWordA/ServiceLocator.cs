@@ -102,6 +102,8 @@ public class ServiceLocator {
         serviceCollection.AddSingleton<IWordFavoriteStorage, WordFavoriteStorage>();
         serviceCollection.AddSingleton<ICourseStorage, CourseStorage>();
         serviceCollection.AddSingleton<IMemoStorage, MemoStorage>();
+        serviceCollection.AddSingleton<IMusicPlayer, MusicPlayer>();
+        serviceCollection.AddSingleton<IMusicStorage, MusicStorage>();
         
         
         serviceCollection.AddSingleton<MainWindowViewModel>();
@@ -124,7 +126,7 @@ public class ServiceLocator {
         serviceCollection.AddSingleton<IWeatherService, WeatherService>();
         
         serviceCollection.AddSingleton<MusicPlayerViewModel>();
-        serviceCollection.AddSingleton<IMusicPlayer, MusicPlayer>();
+        
 
         _serviceProvider = serviceCollection.BuildServiceProvider();
     }

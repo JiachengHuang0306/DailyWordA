@@ -10,8 +10,10 @@
         <PackageReference Include="Avalonia" Version="11.1.4" />
         <PackageReference Include="AvaloniaInfiniteScrolling.Collection" Version="1.0.1" />
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.2" />
+        <PackageReference Include="NAudio" Version="2.2.1" />
         <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
         <PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
+        <PackageReference Include="TagLibSharp" Version="2.3.0" />
     </ItemGroup>
 
     <ItemGroup>
@@ -26,5 +28,6 @@
         <None Remove="memosdb.sqlite3" />
         <EmbeddedResource Include="memosdb.sqlite3" />
     </ItemGroup>
+    
     
 </Project>

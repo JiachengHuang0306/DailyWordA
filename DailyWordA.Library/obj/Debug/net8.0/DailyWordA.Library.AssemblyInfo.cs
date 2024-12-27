@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DailyWordA.Library")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7200ba2864b05d41087529320005fa81b0c57d1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6ed5d2c4e07bb3be2e596dfd589337d202c1f9c")]
 [assembly: System.Reflection.AssemblyProductAttribute("DailyWordA.Library")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DailyWordA.Library")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

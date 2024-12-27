@@ -10,8 +10,7 @@ using DailyWordA.Library.Services;
 
 namespace DailyWordA.Library.ViewModels;
 
-public class MemoViewModel : ViewModelBase
-{
+public class MemoViewModel : ViewModelBase {
     private readonly IMemoStorage _memoStorage;
     private DateTime _selectedDate;
     private string _newMemoContent;
@@ -121,24 +120,15 @@ public class MemoViewModel : ViewModelBase
         });
     }
 
-    private async Task DeleteMemoAsync(MemoObject memo)
-    {
+    private async Task DeleteMemoAsync(MemoObject memo) {
         if (memo == null)
             return;
+        
+        await _memoStorage.DeleteMemoAsync(memo.Id);
 
-        try
-        {
-            await _memoStorage.DeleteMemoAsync(memo.Id);
-
-            await Dispatcher.UIThread.InvokeAsync(async () =>
-            {
+        await Dispatcher.UIThread.InvokeAsync(async () => {
                 await LoadMemosAsync();
             });
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"删除备忘事项时出错: {ex.Message}");
-        }
     }
 
     private async Task EditMemoAsync(MemoObject memoObject)

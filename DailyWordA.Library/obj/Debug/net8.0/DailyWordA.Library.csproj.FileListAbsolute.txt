@@ -37,3 +37,45 @@ Z:/Desktop/DWA/DailyWordA.Library/obj/Debug/net8.0/ref/DailyWordA.Library.dll
 /Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/obj/Debug/net8.0/refint/DailyWordA.Library.dll
 /Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.pdb
 /Users/yichengxu/Documents/2024 Total/全栈技术开发/项目/Version 4/DailyWordA/DailyWordA.Library/obj/Debug/net8.0/ref/DailyWordA.Library.dll
+/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/bin/Debug/net8.0/DailyWordA.Library.deps.json
+/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/bin/Debug/net8.0/DailyWordA.Library.dll
+/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/bin/Debug/net8.0/DailyWordA.Library.pdb
+/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.csproj.AssemblyReference.cache
+/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/Avalonia/Resources.Inputs.cache
+/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.AssemblyInfoInputs.cache
+/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.AssemblyInfo.cs
+/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.csproj.CoreCompileInputs.cache
+/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.sourcelink.json
+/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.dll
+/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/refint/DailyWordA.Library.dll
+/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.pdb
+/Users/jiachenghuang/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/ref/DailyWordA.Library.dll
+//Mac/Home/Desktop/DWANEU/DailyWordA.Library/bin/Debug/net8.0/DailyWordA.Library.deps.json
+//Mac/Home/Desktop/DWANEU/DailyWordA.Library/bin/Debug/net8.0/DailyWordA.Library.dll
+//Mac/Home/Desktop/DWANEU/DailyWordA.Library/bin/Debug/net8.0/DailyWordA.Library.pdb
+//Mac/Home/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.csproj.AssemblyReference.cache
+//Mac/Home/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/Avalonia/Resources.Inputs.cache
+//Mac/Home/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.GeneratedMSBuildEditorConfig.editorconfig
+//Mac/Home/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.AssemblyInfoInputs.cache
+//Mac/Home/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.AssemblyInfo.cs
+//Mac/Home/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.csproj.CoreCompileInputs.cache
+//Mac/Home/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.sourcelink.json
+//Mac/Home/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.dll
+//Mac/Home/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/refint/DailyWordA.Library.dll
+//Mac/Home/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/DailyWordA.Library.pdb
+//Mac/Home/Desktop/DWANEU/DailyWordA.Library/obj/Debug/net8.0/ref/DailyWordA.Library.dll
+\\Mac\Home\Desktop\DWANEU\DailyWordA.Library\bin\Debug\net8.0\DailyWordA.Library.deps.json
+\\Mac\Home\Desktop\DWANEU\DailyWordA.Library\bin\Debug\net8.0\DailyWordA.Library.dll
+\\Mac\Home\Desktop\DWANEU\DailyWordA.Library\bin\Debug\net8.0\DailyWordA.Library.pdb
+\\Mac\Home\Desktop\DWANEU\DailyWordA.Library\obj\Debug\net8.0\DailyWordA.Library.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\DWANEU\DailyWordA.Library\obj\Debug\net8.0\Avalonia\Resources.Inputs.cache
+\\Mac\Home\Desktop\DWANEU\DailyWordA.Library\obj\Debug\net8.0\DailyWordA.Library.GeneratedMSBuildEditorConfig.editorconfig
+\\Mac\Home\Desktop\DWANEU\DailyWordA.Library\obj\Debug\net8.0\DailyWordA.Library.AssemblyInfoInputs.cache
+\\Mac\Home\Desktop\DWANEU\DailyWordA.Library\obj\Debug\net8.0\DailyWordA.Library.AssemblyInfo.cs
+\\Mac\Home\Desktop\DWANEU\DailyWordA.Library\obj\Debug\net8.0\DailyWordA.Library.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\DWANEU\DailyWordA.Library\obj\Debug\net8.0\DailyWordA.Library.sourcelink.json
+\\Mac\Home\Desktop\DWANEU\DailyWordA.Library\obj\Debug\net8.0\DailyWordA.Library.dll
+\\Mac\Home\Desktop\DWANEU\DailyWordA.Library\obj\Debug\net8.0\refint\DailyWordA.Library.dll
+\\Mac\Home\Desktop\DWANEU\DailyWordA.Library\obj\Debug\net8.0\DailyWordA.Library.pdb
+\\Mac\Home\Desktop\DWANEU\DailyWordA.Library\obj\Debug\net8.0\ref\DailyWordA.Library.dll

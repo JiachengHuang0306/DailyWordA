@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DailyWordA.UnitTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbd725b5692d24794e0f034dd2b0a0140b8a6094")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6ed5d2c4e07bb3be2e596dfd589337d202c1f9c")]
 [assembly: System.Reflection.AssemblyProductAttribute("DailyWordA.UnitTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DailyWordA.UnitTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

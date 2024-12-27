@@ -9,17 +9,21 @@ public class InitializationViewModel : ViewModelBase {
     private readonly IWordStorage _wordStorage;
     private readonly ICourseStorage _courseStorage;
     private readonly IMemoStorage _memoStorage;
+    private readonly IMusicStorage _musicStorage;
     private readonly IRootNavigationService _rootNavigationService;
     private readonly IWordFavoriteStorage _wordFavoriteStorage;
+    
 
     public InitializationViewModel(IWordStorage wordStorage, 
         ICourseStorage courseStorage,
         IMemoStorage memoStorage,
+        IMusicStorage musicStorage,
         IRootNavigationService rootNavigationService,
         IWordFavoriteStorage wordFavoriteStorage) {
         _wordStorage = wordStorage;
         _courseStorage = courseStorage;
         _memoStorage = memoStorage;
+        _musicStorage = musicStorage;
         _rootNavigationService = rootNavigationService;
         _wordFavoriteStorage = wordFavoriteStorage;
         
@@ -44,7 +48,18 @@ public class InitializationViewModel : ViewModelBase {
         if (!_memoStorage.IsInitialized) {
             await _memoStorage.InitializeAsync();
         }
-
+        
+        if (_musicStorage == null)
+        {
+            throw new InvalidOperationException("MusicStorage 未初始化");
+        }
+        
+        if (!_musicStorage.IsInitialized) {
+            await _musicStorage.InitializeAsync();
+        }
+        
+        
+        
         await Task.Delay(3000);
 
         _rootNavigationService.NavigateTo(RootNavigationConstant.MainView);
